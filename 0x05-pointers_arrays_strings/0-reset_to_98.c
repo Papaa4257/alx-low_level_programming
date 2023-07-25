@@ -1,22 +1,22 @@
 #include "main.h"
-/**
- * _strcat -  function that concatenates two strings.
- * @src: parameter to a src
- * @dest: parameter to append
- * Return: Always 0.
- */
-char *_strcat(char *dest, char *src)
-{
-	int a = 0;
-	int b = 0;
 
-	while (dest[a] != '\0')
-		a++;
-	while (src[b] != '\0')
-	{
-		dest[a] = src[b];
-		b++;
-		a++;
-	}
-	return (dest);
+/**
+
+ * reset_to_98 - a function that takes a pointer to an int as parameter
+
+ * and updates the value it points to to 98
+
+ * @n: input
+
+ * Return: n
+
+ */
+
+void reset_to_98(int *n)
+
+{
+
+        *n = 98;
+
 }
+
