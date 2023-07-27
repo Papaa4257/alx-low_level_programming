@@ -1,4 +1,4 @@
-j#include "main.h"
+#include "main.h"
 /**
  * _strcat -  function that concatenates two strings.
  * @src: parameter to a src
