@@ -1,40 +1,26 @@
-#include "main.h"
+#include "mainn.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
-* main - Prints the sum of args positive numbers
-* @argc: argument count
-* @argv: argument vector
-*
-* Return: Always zero
+  * main - Prints the multiplication of two args numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
 */
 int main(int argc, char *argv[])
 {
-int i;
-unsigned int k, sum = 0;
-char *e;
-if (argc > 1)
+int n1 = 0, n2 = 0;
+if (argc == 3)
 {
-for (i = 1; i < argc; i++)
-{
-e = argv[i];
-for (k = 0; k < strlen(e); k++)
-{
-if (e[k] < 48 || e[k] > 57)
-{
-printf("Error\n");
-return (1);
-}
-}
-sum += atoi(e);
-e++;
-}
-printf("%d\n", sum);
+n1 = atoi(argv[1]);
+n2 = atoi(argv[2]);
+printf("%d\n", n1 * n2);
 }
 else
 {
-printf("0\n");
+printf("Error\n");
+return (1);
 }
 return (0);
 }
