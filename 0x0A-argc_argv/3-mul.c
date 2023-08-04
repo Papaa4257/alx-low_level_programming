@@ -7,7 +7,7 @@
   * @argv: argument vector
   *
   * Return: Always zero
-  */
+ */
 int main(int argc, char *argv[])
 {
 int n1 = 0, n2 = 0;
