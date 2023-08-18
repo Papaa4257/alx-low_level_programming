@@ -14,7 +14,7 @@ int sum;
 if (n == 0)
 return (0);
 sum = 0;
-/* init valist for the number of arguments *	va_start(my_nums, n);
+/* init valist for the number of arguments *	va_start(my_nums, n); */
 va_start(my_nums, n);
 	/* loop through/access all arguments stored in the valist */
 for (count = 0; count < n; count++)
