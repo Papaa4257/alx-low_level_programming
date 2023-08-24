@@ -28,7 +28,7 @@ end_node->str = NULL;
 end_node->len = 0;
 }
 end_node->next = NULL;
- if (*head)
+if (*head)
 {
 cursor = *head;
 while (cursor->next != NULL)
