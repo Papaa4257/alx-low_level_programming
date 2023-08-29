@@ -8,11 +8,11 @@ include "lists.h"
  */
 void free_listint(listint_t *head)
 {
-listint_t *temp;
+listint_t *temps;
 while (head)
 {
-head = head->next;
+temps = head->next;
 free(head);
-head = temp;
+head = temps;
 }
 }
