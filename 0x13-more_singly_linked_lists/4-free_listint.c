@@ -1,10 +1,10 @@
-include "lists.h"
+#include "lists.h"
 /**
- * free_listint - frees a linked list
- * @head: listint_t list to be freed
+ * free_listint - function with one argument
+ * @head: pointer to node
  *
- * Return: nothing
- *
+ * Description: frees a list
+ * Return: void
  */
 void free_listint(listint_t *head)
 {
