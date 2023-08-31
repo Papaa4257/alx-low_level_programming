@@ -1,5 +1,4 @@
 #include "coding.h"
-
 /**
  * set_bit - function with two arguments
  * @n: pointer to value
@@ -10,10 +9,8 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index >= (sizeof(*n) * 8))
-		return (-1);
-
-	*n |= 1 << index;
-	return (1);
-
+if (index >= (sizeof(*n) * 8))
+return (-1);
+*n |= 1 << index;
+return (1);
 }
